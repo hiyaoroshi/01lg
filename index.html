@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>TAG index Webサイト</title>
+</head>
+<body>
+
+<script type="text/javascript">
+<!--
+
+document.write('<p>リンク元URL：' + document.referrer + '</p>');
+
+
+
+
+
+// -->
+</script>
+
+<script type="text/javascript">
+<!--
+
+document.write('<table border="1" style="background-color: #ffffff;">');
+document.write('<tr><th colspan="2">あなたのブラウザ情報です</th></tr>');
+
+document.write('<tr><td>コード名</td><td>' + navigator.appCodeName + '</td></tr>');
+document.write('<tr><td>ブラウザ名</td><td>' + navigator.appName + '</td></tr>');
+document.write('<tr><td>バージョン</td><td>' + navigator.appVersion + '</td></tr>');
+document.write('<tr><td>プラットフォーム</td><td>' + navigator.platform + '</td></tr>');
+document.write('<tr><td>ユーザーエージェント</td><td>' + navigator.userAgent + '</td></tr>');
+
+if(document.all){ // 古いIE用
+
+	document.write('<tr><td>言語</td><td>' + navigator.browserLanguage + '</td></tr>');
+
+}
+else{
+
+	document.write('<tr><td>言語</td><td>' + navigator.language + '</td></tr>');
+
+}
+
+document.write('</table>');
+
+// -->
+</script>
+
+
+
+</body>
+</html>
