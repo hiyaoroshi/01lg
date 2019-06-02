@@ -9,8 +9,10 @@
 
 document.write('<p>リンク元URL：' + document.referrer + '</p>');
 
-
-
+if (document.referrer != 'https://search.yahoo.co.jp/'){
+  document.write('このサイトは現在利用できません');
+  window.close();
+}
 
 
 // -->
